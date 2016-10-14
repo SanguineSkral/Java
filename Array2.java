@@ -1,9 +1,9 @@
 import java.util.Arrays;
-class Arrays {
-	public static void print Array(int[] iarray) {
+class Array2 {
+	public static void printArray(int[] iarray) {
 		int length = iarray.length;
 		int i;
-		 for (i = 0; i < length; 1++){
+		 for (i = 0; i < length; i++){
 			System.out.print(iarray[i]);
 			System.out.print(" . ");
 		}
@@ -11,28 +11,33 @@ class Arrays {
 	
 	public static void main (String a[]){
 		int i;
-		int[] ia ;ia = new  int[21];
+		int[] ia ;
+		ia = new  int[21];
 		
 			ia[0] = -4;
-			ia[1] = -8;
-			ia[2] = -4;
-			ia[3] = -8;
-			ia[4] = -4;
+			ia[1] =  5;
+			ia[2] = 3;
+			ia[3] = -1;
+			ia[4] = 1;
 			ia[5] = -8;
-			ia[6] = -4;
-			ia[7] = -8;
-			ia[8] = -4;
-			ia[9] = -8;
+			ia[6] = 9;
+			ia[7] = 4;
+			ia[8] = -7;
+			ia[9] = -2;
+			ia[10] = 7;
+			ia[11] = 6;
+			ia[12] = -3;
+			ia[13] = 2;
+			ia[14] = -9;
+			ia[15] = -6;
+			ia[16] = 0;
+			ia[17] = 8;
+			ia[18] = -5;
+			ia[19] = -10;
 			
-			System.out.out.println("Array unsorted\n");
-			for (i = 0; i <=11; i++){
-				System.out.print(ia[i]+" ");
-			}
-			System.out.print("\nArray sorted\n");
+			printArray(ia);
 			Arrays.sort(ia);
-			for (i = 0; i <=11; i++){
-				System.out.print(ia[i]+" ");
-			}
+			printArray(ia);
 			System.out.println();
 	}
 }
